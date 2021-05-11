@@ -24,24 +24,24 @@
 <header>
     <nav class="navbar  navbar-custom navbar-expand-lg ">
         <div class="container-fluid">
-            <a href="Acasa.html" class="navbar-brand"><img src="../img/emoji/Ciclon.png" alt="Logo" title="Logo">Razvan
+            <a href="../index.html" class="navbar-brand"><img src="../img/emoji/Ciclon.png" alt="Logo" title="Logo">Razvan
                 face poze </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="Acasa.html" class="nav-link active">Acasa</a></li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link active">Acasa</a></li>
                     <li class="nav-item"><a href="Despre.html" class="nav-link">Despre</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Proiecte</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Mortii mei</a></li>
+                    <li class="nav-item"><a href="Contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="Formular.html" class="nav-link">Mortii mei</a></li>
                 </ul>
             </div>
         </div>
 </header>
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-dragon"></i></button>
+    
     
     <div class="container my-5">
         <!-- <div class="row py-4" >
@@ -141,14 +141,22 @@
         </div>
         <div class="row py-4 my-5 bios2 rotund text-center justify-content-center">
             <div clas="col-12 my-auto">
-                <h5 class="font-weight-bold" >Well, asta a fost scurta istorie despre cum a inceput cariera mea de fotograf, daca doriti, va invit, sa vedeti 
+                <h2 class="font-weight-normal">Well, asta a fost scurta istorie despre cum a inceput cariera mea de fotograf, daca doriti, va invit, sa vedeti 
                                             si alte poze facute de mine, in meniul "Proiecte" BIIIIG UUUUPPPPP 🔥
-                </h5>
+                </h2>
                 <a href="Proiecte.html" class="btn btn-dark btn-lg">Proiecte</a>
             </div>
         </div>
-    </div> 
-</body>
+    </div>
+    <!-- <div id="go-top-link"> 
+        <a href="index.html" class="btn btn-dark btn-lg">
+            <i class="fas fa-dragon" title="Mergi sus" aria-labe="Mergi sus"></i>
+        </a>
+    </div>  -->
+    <button onclick="topFunction()" id="go-top-link" class="btn btn-dark btn-lg" title="Go to top">
+        <i class="fas fa-dragon"></i>
+    </button>
+
 
 <!-- Start Footer -->
 <footer class="py-5">
@@ -161,7 +169,7 @@
                         <a href="https://www.facebook.com/rzvphotograpy" target="_blank"><i class="fab fa-facebook social my-auto"></i></a>
                     </div>
                     <div class="col-sm-10 col-md-8 col-lg-6">
-                        <h4>Despre proiectul</h4>
+                        <h4>Despre proiect</h4>
                         <p> A pornit de la ideea unui prieten, pentru a invata mai mult, 
                             insa a inceput sa imi placa și chiar cred că are potențial.
                         </p>
@@ -224,33 +232,16 @@
     <!-- End Script Source Files -->
 
     <!-- Script code-->
-    <script type="text/javascript">
-        $('.owl-carousel').owlCarousel({
-            loop:false,
-            margin:10,
-            // nav:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                700:{
-                    items:2
-                },
-                1000:{
-                    items:3
-                }
-            }
-        })
-    
+    <script>
     //Get the button
-    var mybutton = document.getElementById("myBtn");
+    var mybutton = document.getElementById("go-top-link");
     
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
     
     function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        $("#mtBtn").toggleClass("#myBtn-works");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = "block";
       } else {
         mybutton.style.display = "none";
       }
@@ -261,7 +252,6 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
-    </script>
     </script>
 </body>
 
