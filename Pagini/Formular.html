@@ -31,7 +31,7 @@
             </div>
     </header>
 
-    <div class="form-box">
+    <div class="form-box" style="height: 650px">
       <div class="button-box">
         <div id="b1tn"></div>
         <button type="button" class="toggle-btn" onclick = "login()" >Logare</button>
@@ -47,14 +47,16 @@
         <button type="submit" class="submit-btn">Logare</button>
       </form>
       <form id="register" class="input-group">
-        <input type="text" class="input-field" placeholder="User Id" required>
-        <input type="email" class="input-field" placeholder="Email Id" required>
-        <input type="password" class="input-field" placeholder="Introdu parola" required>
+        <input type="text" class="input-field" name="name"  placeholder = "Nume">
+        <input type="email" class="input-field" name="email" placeholder="Email Id">
+        <input type="text" class="input-field" name="uid" placeholder="User Id">
+        <input type="password" class="input-field" name="pwd" placeholder="Introdu parola">
+        <input type="password" class="input-field" name="pwdrepeat" placeholder="Reintrodu parola">
         <div id="check">
-          <input type="checkbox" class="check-box" id="pass" name="pass" required>
+          <input type="checkbox" class="check-box" id="pass" name="pass">
           <label for="pass" class="pass">Sunt de acord cu termenii si conditiile</label>
         </div>
-        <button type="submit" class="submit-btn">Register</button>
+        <button type="submit" name="submit" class="submit-btn">Register</button>
       </form>
     </div>
     <script>
