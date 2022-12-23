@@ -142,8 +142,9 @@ body {
 .black{
   color: rgb(43, 43, 43) !important;
 }
-.black_2{
-  color: rgb(43, 43, 43) !important;
+
+.white{
+  color: rgb(240, 240, 240) !important;
 }
 
 #myBtn {
@@ -174,6 +175,9 @@ body {
   height: 2rem;
   vertical-align: text-bottom;
 }
+
+
+
 .navbar-custom { 
   /* background-image: linear-gradient(to right,rgb(37, 128, 170) 0%, rgb(41, 141, 86) 60%); */
   background-image: linear-gradient(to right, #456268 0%,#79a3b1 50%);
@@ -200,6 +204,11 @@ body {
 .nav-link{
   color: white!important;
 }
+
+.nav-link.active{
+  color:#28334AFF !important;
+}
+
 .nav-link:hover{
 color: #28334AFF!important;
 }
@@ -432,7 +441,7 @@ button.bg-custom:focus {
 
 /*=========== TWO COLUMN SECTION ===========*/
 .bio{
-  background-color: honeydew;
+  background-color: #456268;
 
 }
   div.bios p::first-letter,
@@ -465,9 +474,18 @@ button.bg-custom:focus {
   border-radius: 30px;
 }
 
+img.closi{
+height:auto;
+margin-top: 15%;
+}
+
 /*=============== PORTOFOLIU ===============*/
 .block{
   display: block;
+}
+
+.bio p{
+  color: white;
 }
  .portofoliu{
   background-color: #d0e8f2;
