@@ -255,6 +255,9 @@ button.navbar-toggler:focus{
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
   margin: auto;
 }
+#carousel1{
+  margin: auto;
+}
 /* .carousel-inner{
   max-height: 38rem!important;
 } */
@@ -475,8 +478,12 @@ button.bg-custom:focus {
 }
 
 img.closi{
-height:auto;
+height:350px;
 margin-top: 15%;
+}
+
+.scarlatescu div img{
+  aspect-ratio: 1/1;
 }
 
 /*=============== PORTOFOLIU ===============*/
